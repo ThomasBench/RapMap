@@ -1,0 +1,529 @@
+1654421221066	geckodriver	INFO	Listening on 127.0.0.1:50202
+1654421227061	mozrunner::runner	INFO	Running command: "C:\\Users\\bench\\Desktop\\Tor Browser\\Browser\\firefox.exe" "--marionette" "--remote-debugging-port" "50203" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\bench\\AppData\\Local\\Temp\\rust_mozprofileGWJVaM"
+console.log: "TorSettings: loadFromPrefs()"
+console.log: "TorConnect: Init"
+console.log: "TorConnect: observed profile-after-change"
+console.log: "TorConnect: observing topic 'TorBootstrapStatus'"
+console.log: "TorConnect: observing topic 'TorBootstrapError'"
+console.log: "TorConnect: observing topic 'TorProcessExited'"
+console.log: "TorConnect: observing topic 'TorLogHasWarnOrErr'"
+console.log: "TorConnect: observing topic 'torsettings:ready'"
+console.log: "TorSettings: observed profile-after-change"
+1654421228174	Marionette	INFO	Marionette enabled
+console.log: "TorConnect: will load after bootstrap => [about:blank]"
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.error: "Could not load engine google@search.mozilla.org: Error: Extension is invalid"
+JavaScript error: resource://gre/modules/XPCOMUtils.jsm, line 161: TypeError: Cc[aContract] is undefined
+console.error: "Could not load engine blockchair-onion@search.mozilla.org: Error: Extension is invalid"
+DevTools listening on ws://localhost:50203/devtools/browser/799bc783-f657-4fce-aeb6-63d703a45533
+1654421230820	Marionette	INFO	Listening on port 50229
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x390143,name=PContent::Msg_AsyncMessage) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x3900D3,name=PContent::Msg_ScriptErrorWithStack) Channel closing: too late to send/recv, messages will be lost
+
+JavaScript error: resource://gre/modules/ExtensionContent.jsm, line 575: TypeError: PrecompiledScript.executeInGlobal: Argument 1 is not an object.
+1654421231270	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1654421248713	Marionette	INFO	Stopped listening on port 50221654421251283	mozrunner::runner	INFO	Running command: "C:\\Users\\bench\\Desktop\\Tor Browser\\Browser\\firefox.exe" "--marionette" "--remote-debugging-port" "50273" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\bench\\AppData\\Local\\Temp\\rust_mozprofileL5RaDh"
+console.log: "TorSettings: loadFromPrefs()"
+console.log: "TorConnect: Init"
+console.log: "TorConnect: observed profile-after-change"
+console.log: "TorConnect: observing topic 'TorBootstrapStatus'"
+console.log: "TorConnect: observing topic 'TorBootstrapError'"
+console.log: "TorConnect: observing topic 'TorProcessExited'"
+console.log: "TorConnect: observing topic 'TorLogHasWarnOrErr'"
+console.log: "TorConnect: observing topic 'torsettings:ready'"
+console.log: "TorSettings: observed profile-after-change"
+1654421252064	Marionette	INFO	Marionette enabled
+console.log: "TorConnect: will load after bootstrap => [about:blank]"
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.error: "Could not load engine google@search.mozilla.org: Error: Extension is invalid"
+JavaScript error: resource://gre/modules/XPCOMUtils.jsm, line 161: TypeError: Cc[aContract] is undefined
+console.error: "Could not load engine blockchair-onion@search.mozilla.org: Error: Extension is invalid"
+DevTools listening on ws://localhost:50273/devtools/browser/6899bd6f-5fef-4017-8b11-c50215d46645
+1654421253590	Marionette	INFO	Listening on port 50281
+JavaScript error: resource://gre/modules/ExtensionContent.jsm, line 575: TypeError: PrecompiledScript.executeInGlobal: Argument 1 is not an object.
+1654421253965	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1654421345757	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1654421345758	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1654421345761	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PClientManager::Msg_ExpectFutureClientSource Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PClientManager::Msg_ForgetFutureClientSource Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+SourceActor threw an exception: [Exception... "Failed to open input source 'blob:moz-extension://97c2f315-3166-43b4-add5-2516d1efabde/cffc3f07-ebd2-47e6-970b-04d171547938'"  nsresult: "0x805303f4 (<unknown>)"  location: "JS frame :: resource://devtools/shared/DevToolsUtils.js :: mainThreadFetch/< :: line 670"  data: yes]
+Stack: mainThreadFetch/<@resource://devtools/shared/DevToolsUtils.js:670:15
+mainThreadFetch@resource://devtools/shared/DevToolsUtils.js:516:10
+_fetchURLContents@resource://devtools/server/actors/utils/sources-manager.js:442:22
+urlContents@resource://devtools/server/actors/utils/sources-manager.js:406:17
+_resurrectSource@resource://devtools/server/actors/thread.js:2142:35
+addAllSources@resource://devtools/server/actors/thread.js:1509:14
+watch@resource://devtools/server/actors/resources/sources.js:52:17
+watchResources@resource://devtools/server/actors/resources/index.js:239:19
+_watchTargetResources@resource://devtools/server/actors/targets/target-actor-mixin.js:156:24
+addWatcherDataEntry@resource://devtools/server/actors/targets/target-actor-mixin.js:47:20
+_addWatcherDataEntry@resource://devtools/server/connectors/js-window-actor/DevToolsFrameChild.jsm:483:24
+receiveMessage@resource://devtools/server/connectors/js-window-actor/DevToolsFrameChild.jsm:425:21
+Line: 670, column: 0
+console.error: ({})
+SourceActor threw an exception: [Exception... "Failed to open input source 'blob:moz-extension://97c2f315-3166-43b4-add5-2516d1efabde/23a564c7-9588-4998-b8ff-4ed355fcce40'"  nsresult: "0x805303f4 (<unknown>)"  location: "JS frame :: resource://devtools/shared/DevToolsUtils.js :: mainThreadFetch/< :: line 670"  data: yes]
+Stack: mainThreadFetch/<@resource://devtools/shared/DevToolsUtils.js:670:15
+mainThreadFetch@resource://devtools/shared/DevToolsUtils.js:516:10
+_fetchURLContents@resource://devtools/server/actors/utils/sources-manager.js:442:22
+urlContents@resource://devtools/server/actors/utils/sources-manager.js:406:17
+_resurrectSource@resource://devtools/server/actors/thread.js:2142:35
+addAllSources@resource://devtools/server/actors/thread.js:1509:14
+watch@resource://devtools/server/actors/resources/sources.js:52:17
+watchResources@resource://devtools/server/actors/resources/index.js:239:19
+_watchTargetResources@resource://devtools/server/actors/targets/target-actor-mixin.js:156:24
+addWatcherDataEntry@resource://devtools/server/actors/targets/target-actor-mixin.js:47:20
+_addWatcherDataEntry@resource://devtools/server/connectors/js-window-actor/DevToolsFrameChild.jsm:483:24
+receiveMessage@resource://devtools/server/connectors/js-window-actor/DevToolsFrameChild.jsm:425:21
+Line: 670, column: 0
+console.error: ({})
+JavaScript error: resource://devtools/shared/DevToolsUtils.js, line 670: Failed to open input source 'blob:moz-extension://97c2f315-3166-43b4-add5-2516d1efabde/cffc3f07-ebd2-47e6-970b-04d171547938'
+JavaScript error: resource://devtools/shared/DevToolsUtils.js, line 670: Failed to open input source 'blob:moz-extension://97c2f315-3166-43b4-add5-2516d1efabde/23a564c7-9588-4998-b8ff-4ed355fcce40'
+JavaScript error: resource://gre/modules/PromiseWorker.jsm, line 106: Error: Could not get children of file(C:\Users\bench\AppData\Local\Temp\rust_mozprofileL5RaDh\thumbnails) because it does not exist
+console.warn: "Resource  of root-node was not found."
+JavaScript error: resource:///actors/RFPHelperParent.jsm, line 28: TypeError: browser is null
+JavaScript error: resource:///actors/RFPHelperParent.jsm, line 28: TypeError: browser is null
+JavaScript error: resource:///actors/RFPHelperParent.jsm, line 28: TypeError: browser is null
+1654421896587	Marionette	INFO	Stopped listening on port 50281654421898522	mozrunner::runner	INFO	Running command: "C:\\Users\\bench\\Desktop\\Tor Browser\\Browser\\firefox.exe" "--marionette" "--remote-debugging-port" "52911" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\bench\\AppData\\Local\\Temp\\rust_mozprofile2kGK6v"
+ponent returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+!!! error running onStopped callback: TypeError: callback is not a function
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1654421896728	RemoteAgent	ERROR	unable to stop listener: [Exception... "Component returned failure code: 0x8000ffff (NS_ERROR_UNEXPECTED) [nsIWindowMediator.getEnumerator]"  nsresult: "0x8000ffff (NS_ERROR_UNEXPECTED)"  location: "JS frame :: chrome://remote/content/cdp/observers/TargetObserver.jsm :: stop :: line 64"  data: no] Stack trace: stop()@TargetObserver.jsm:64
+unwatchForTabs()@TargetList.jsm:70
+unwatchForTargets()@TargetList.jsm:37
+destructor()@TargetList.jsm:109
+stop()@CDP.jsm:104
+close()@RemoteAgent.jsm:138
+1654421915795	geckodriver	INFO	Listening on 127.0.0.1:52953
+1654421921333	mozrunner::runner	INFO	Running command: "C:\\Users\\bench\\Desktop\\Tor Browser\\Browser\\firefox.exe" "--marionette" "--remote-debugging-port" "52954" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\bench\\AppData\\Local\\Temp\\rust_mozprofileC4wjIP"
+console.log: "TorSettings: loadFromPrefs()"
+console.log: "TorConnect: Init"
+console.log: "TorConnect: observed profile-after-change"
+console.log: "TorConnect: observing topic 'TorBootstrapStatus'"
+console.log: "TorConnect: observing topic 'TorBootstrapError'"
+console.log: "TorConnect: observing topic 'TorProcessExited'"
+console.log: "TorConnect: observing topic 'TorLogHasWarnOrErr'"
+console.log: "TorConnect: observing topic 'torsettings:ready'"
+console.log: "TorSettings: observed profile-after-change"
+1654421922507	Marionette	INFO	Marionette enabled
+console.log: "TorConnect: will load after bootstrap => [about:blank]"
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.error: "Could not load engine google@search.mozilla.org: Error: Extension is invalid"
+JavaScript error: resource://gre/modules/XPCOMUtils.jsm, line 161: TypeError: Cc[aContract] is undefined
+console.error: "Could not load engine blockchair-onion@search.mozilla.org: Error: Extension is invalid"
+DevTools listening on ws://localhost:52954/devtools/browser/d4cf0e6b-ccdf-45ab-ba2d-3ff1fdbb01ca
+1654421924697	Marionette	INFO	Listening on port 52961
+1654421925030	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+Port.onMessage event fired while context is inactive.
+Extension error: [Exception... "Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIDOMWindowUtils.addSheet]"  nsresult: "0x80004005 (NS_ERROR_FAILURE)"  location: "JS frame :: resource://gre/modules/ExtensionCommon.jsm :: runSafeSyncWithoutClone :: line 74"  data: no] undefined 74
+[[Exception stack
+runSafeSyncWithoutClone@resource://gre/modules/ExtensionCommon.jsm:74:12
+inject/cssPromise<@resource://gre/modules/ExtensionContent.jsm:533:36
+Current stack
+runSafeSyncWithoutClone@resource://gre/modules/ExtensionCommon.jsm:80:9
+inject/cssPromise<@resource://gre/modules/ExtensionContent.jsm:533:36
+]]
+SourceActor threw an exception: [Exception... "Failed to open input source 'blob:moz-extension://97c2f315-3166-43b4-add5-2516d1efabde/c8fff17a-996c-4a52-af2d-f1d620ef9df7'"  nsresult: "0x805303f4 (<unknown>)"  location: "JS frame :: resource://devtools/shared/DevToolsUtils.js :: mainThreadFetch/< :: line 670"  data: yes]
+Stack: mainThreadFetch/<@resource://devtools/shared/DevToolsUtils.js:670:15
+mainThreadFetch@resource://devtools/shared/DevToolsUtils.js:516:10
+_fetchURLContents@resource://devtools/server/actors/utils/sources-manager.js:442:22
+urlContents@resource://devtools/server/actors/utils/sources-manager.js:406:17
+_resurrectSource@resource://devtools/server/actors/thread.js:2142:35
+addAllSources@resource://devtools/server/actors/thread.js:1509:14
+watch@resource://devtools/server/actors/resources/sources.js:52:17
+watchResources@resource://devtools/server/actors/resources/index.js:239:19
+_watchTargetResources@resource://devtools/server/actors/targets/target-actor-mixin.js:156:24
+addWatcherDataEntry@resource://devtools/server/actors/targets/target-actor-mixin.js:47:20
+_addWatcherDataEntry@resource://devtools/server/connectors/js-window-actor/DevToolsFrameChild.jsm:483:24
+receiveMessage@resource://devtools/server/connectors/js-window-actor/DevToolsFrameChild.jsm:425:21
+Line: 670, column: 0
+console.error: ({})
+SourceActor threw an exception: [Exception... "Failed to open input source 'blob:moz-extension://97c2f315-3166-43b4-add5-2516d1efabde/96956100-0fd5-4042-91af-409a2f4409f9'"  nsresult: "0x805303f4 (<unknown>)"  location: "JS frame :: resource://devtools/shared/DevToolsUtils.js :: mainThreadFetch/< :: line 670"  data: yes]
+Stack: mainThreadFetch/<@resource://devtools/shared/DevToolsUtils.js:670:15
+mainThreadFetch@resource://devtools/shared/DevToolsUtils.js:516:10
+_fetchURLContents@resource://devtools/server/actors/utils/sources-manager.js:442:22
+urlContents@resource://devtools/server/actors/utils/sources-manager.js:406:17
+_resurrectSource@resource://devtools/server/actors/thread.js:2142:35
+addAllSources@resource://devtools/server/actors/thread.js:1509:14
+watch@resource://devtools/server/actors/resources/sources.js:52:17
+watchResources@resource://devtools/server/actors/resources/index.js:239:19
+_watchTargetResources@resource://devtools/server/actors/targets/target-actor-mixin.js:156:24
+addWatcherDataEntry@resource://devtools/server/actors/targets/target-actor-mixin.js:47:20
+_addWatcherDataEntry@resource://devtools/server/connectors/js-window-actor/DevToolsFrameChild.jsm:483:24
+receiveMessage@resource://devtools/server/connectors/js-window-actor/DevToolsFrameChild.jsm:425:21
+Line: 670, column: 0
+console.error: ({})
+JavaScript error: resource://devtools/shared/DevToolsUtils.js, line 670: Failed to open input source 'blob:moz-extension://97c2f315-3166-43b4-add5-2516d1efabde/c8fff17a-996c-4a52-af2d-f1d620ef9df7'
+JavaScript error: resource://devtools/shared/DevToolsUtils.js, line 670: Failed to open input source 'blob:moz-extension://97c2f315-3166-43b4-add5-2516d1efabde/96956100-0fd5-4042-91af-409a2f4409f9'
+JavaScript error: resource:///actors/RFPHelperParent.jsm, line 28: TypeError: browser is null
+JavaScript error: resource:///actors/RFPHelperParent.jsm, line 28: TypeError: browser is null
+SourceActor threw an exception: Error: Failed to fetch https://www.youtube.com/embed/OVFXTllm7Jc?modestbranding=1&start=0&showinfo=0&enablejsapi=1&origin=genius.com. Code 2147500036.
+Stack: onResponse@resource://devtools/shared/DevToolsUtils.js:556:16
+onStopRequest@resource://gre/modules/NetUtil.jsm:128:18
+Line: 556, column: 16
+console.error: (new Error("Failed to fetch https://www.youtube.com/embed/OVFXTllm7Jc?modestbranding=1&start=0&showinfo=0&enablejsapi=1&origin=genius.com. Code 2147500036.", "resource://devtools/shared/DevToolsUtils.js", 556))
+JavaScript error: resource://devtools/shared/DevToolsUtils.js, line 556: Error: Failed to fetch https://www.youtube.com/embed/OVFXTllm7Jc?modestbranding=1&start=0&showinfo=0&enablejsapi=1&origin=genius.com. Code 2147500036.
+JavaScript error: https://assets.genius.com/javascripts/compiled/bagon_desktop-f5b9650be4f4fb6a42f5.js, line 2: ApiError: 
+1654422181362	Marionette	INFO	Stopped listening on port 52961
+JavaScript error: resource:///modules/Interactions.jsm, line 209: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+JavaScript error: chrome://remote/content/marionette/cert.js, line 55: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+!!! error running onStopped callback: TypeError: callback is not a function
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 575: NotFoundError: No such JSWindowActor 'MarionetteEvents'
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'MarionetteEvents'
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'MarionetteEvents'
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'MarionetteEvents'
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1654422181653	RemoteAgent	ERROR	unable to stop listener: [Exception... "Component returned failure code: 0x8000ffff (NS_ERROR_UNEXPECTED) [nsIWindowMediator.getEnumerator]"  nsresult: "0x8000ffff (NS_ERROR_UNEXPECTED)"  location: "JS frame :: chrome://remote/content/cdp/observers/TargetObserver.jsm :: stop :: line 64"  data: no] Stack trace: stop()@TargetObserver.jsm:64
+unwatchForTabs()@TargetList.jsm:70
+unwatchForTargets()@TargetList.jsm:37
+destructor()@TargetList.jsm:109
+stop()@CDP.jsm:104
+close()@RemoteAgent.jsm:138
+1654422184697	geckodriver	INFO	Listening on 127.0.0.1:53221
+1654422190336	mozrunner::runner	INFO	Running command: "C:\\Users\\bench\\Desktop\\Tor Browser\\Browser\\firefox.exe" "--marionette" "--remote-debugging-port" "53222" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\bench\\AppData\\Local\\Temp\\rust_mozprofilepOIiFK"
+console.log: "TorSettings: loadFromPrefs()"
+console.log: "TorConnect: Init"
+console.log: "TorConnect: observed profile-after-change"
+console.log: "TorConnect: observing topic 'TorBootstrapStatus'"
+console.log: "TorConnect: observing topic 'TorBootstrapError'"
+console.log: "TorConnect: observing topic 'TorProcessExited'"
+console.log: "TorConnect: observing topic 'TorLogHasWarnOrErr'"
+console.log: "TorConnect: observing topic 'torsettings:ready'"
+console.log: "TorSettings: observed profile-after-change"
+1654422191870	Marionette	INFO	Marionette enabled
+console.log: "TorConnect: will load after bootstrap => [about:blank]"
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.error: "Could not load engine google@search.mozilla.org: Error: Extension is invalid"
+JavaScript error: resource://gre/modules/XPCOMUtils.jsm, line 161: TypeError: Cc[aContract] is undefined
+console.error: "Could not load engine blockchair-onion@search.mozilla.org: Error: Extension is invalid"
+DevTools listening on ws://localhost:53222/devtools/browser/1cbb62d3-6315-4864-abbe-22fd5f4f1e24
+1654422194507	Marionette	INFO	Listening on port 53238
+1654422194646	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/modules/PromiseWorker.jsm, line 106: Error: Could not get children of file(C:\Users\bench\AppData\Local\Temp\rust_mozprofilepOIiFK\thumbnails) because it does not exist
+1654426097811	Marionette	INFO	Stopped listening on port 53238
+JavaScript error: resource:///modules/Interactions.jsm, line 209: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+JavaScript error: chrome://remote/content/marionette/cert.js, line 55: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+!!! error running onStopped callback: TypeError: callback is not a function
+1654426097963	RemoteAgent	ERROR	unable to stop listener: [Exception... "Component returned failure code: 0x8000ffff (NS_ERROR_UNEXPECTED) [nsIWindowMediator.getEnumerator]"  nsresult: "0x8000ffff (NS_ERROR_UNEXPECTED)"  location: "JS frame :: chrome://remote/content/cdp/observers/TargetObserver.jsm :: stop :: line 64"  data: no] Stack trace: stop()@TargetObserver.jsm:64
+unwatchForTabs()@TargetList.jsm:70
+unwatchForTargets()@TargetList.jsm:37
+destructor()@TargetList.jsm:109
+stop()@CDP.jsm:104
+close()@RemoteAgent.jsm:138
+1654426138953	geckodriver	INFO	Listening on 127.0.0.1:56921
+1654426145199	mozrunner::runner	INFO	Running command: "C:\\Users\\bench\\Desktop\\Tor Browser\\Browser\\firefox.exe" "--marionette" "--remote-debugging-port" "56922" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\bench\\AppData\\Local\\Temp\\rust_mozprofilevJWhkn"
+console.log: "TorSettings: loadFromPrefs()"
+console.log: "TorConnect: Init"
+console.log: "TorConnect: observed profile-after-change"
+console.log: "TorConnect: observing topic 'TorBootstrapStatus'"
+console.log: "TorConnect: observing topic 'TorBootstrapError'"
+console.log: "TorConnect: observing topic 'TorProcessExited'"
+console.log: "TorConnect: observing topic 'TorLogHasWarnOrErr'"
+console.log: "TorConnect: observing topic 'torsettings:ready'"
+console.log: "TorSettings: observed profile-after-change"
+1654426146667	Marionette	INFO	Marionette enabled
+console.log: "TorConnect: will load after bootstrap => [about:blank]"
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.error: "Could not load engine google@search.mozilla.org: Error: Extension is invalid"
+JavaScript error: resource://gre/modules/XPCOMUtils.jsm, line 161: TypeError: Cc[aContract] is undefined
+console.error: "Could not load engine blockchair-onion@search.mozilla.org: Error: Extension is invalid"
+DevTools listening on ws://localhost:56922/devtools/browser/f7c9f282-bcbd-4389-b70b-73010dafaddc
+1654426148978	Marionette	INFO	Listening on port 56931
+[Parent 13036, IPC I/O Parent] WARNING: file /var/tmp/build/firefox-190c4b37ac3d/ipc/chromium/src/base/process_util_win.cc:167
+1654426149396	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1654426557506	Marionette	INFO	Stopped listening on port 56931
+JavaScript error: resource:///modules/Interactions.jsm, line 209: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+JavaScript error: chrome://remote/content/marionette/cert.js, line 55: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+!!! error running onStopped callback: TypeError: callback is not a function
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1654426557650	RemoteAgent	ERROR	unable to stop listener: [Exception... "Component returned failure code: 0x8000ffff (NS_ERROR_UNEXPECTED) [nsIWindowMediator.getEnumerator]"  nsresult: "0x8000ffff (NS_ERROR_UNEXPECTED)"  location: "JS frame :: chrome://remote/content/cdp/observers/TargetObserver.jsm :: stop :: line 64"  data: no] Stack trace: stop()@TargetObserver.jsm:64
+unwatchForTabs()@TargetList.jsm:70
+unwatchForTargets()@TargetList.jsm:37
+destructor()@TargetList.jsm:109
+stop()@CDP.jsm:104
+close()@RemoteAgent.jsm:138
+1654426558757	geckodriver	INFO	Listening on 127.0.0.1:57207
+1654426564966	mozrunner::runner	INFO	Running command: "C:\\Users\\bench\\Desktop\\Tor Browser\\Browser\\firefox.exe" "--marionette" "--remote-debugging-port" "57208" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\bench\\AppData\\Local\\Temp\\rust_mozprofileSGTSmV"
+console.log: "TorSettings: loadFromPrefs()"
+console.log: "TorConnect: Init"
+console.log: "TorConnect: observed profile-after-change"
+console.log: "TorConnect: observing topic 'TorBootstrapStatus'"
+console.log: "TorConnect: observing topic 'TorBootstrapError'"
+console.log: "TorConnect: observing topic 'TorProcessExited'"
+console.log: "TorConnect: observing topic 'TorLogHasWarnOrErr'"
+console.log: "TorConnect: observing topic 'torsettings:ready'"
+console.log: "TorSettings: observed profile-after-change"
+1654426566203	Marionette	INFO	Marionette enabled
+console.log: "TorConnect: will load after bootstrap => [about:blank]"
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.error: "Could not load engine google@search.mozilla.org: Error: Extension is invalid"
+JavaScript error: resource://gre/modules/XPCOMUtils.jsm, line 161: TypeError: Cc[aContract] is undefined
+console.error: "Could not load engine blockchair-onion@search.mozilla.org: Error: Extension is invalid"
+DevTools listening on ws://localhost:57208/devtools/browser/6f3118ed-4065-4f46-b9f1-4efdd8483fb1
+1654426568656	Marionette	INFO	Listening on port 57216
+1654426569139	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://www.google.com/sorry/index?continue=https://www.youtube.com/embed/OVFXTllm7Jc%3Fmodestbranding%3D1%26start%3D0%26showinfo%3D0%26enablejsapi%3D1%26origin%3Dgenius.com&q=EgSQrElCGNuX8pQGIhAkvX-UQ6xIxbTxSeMaYjBbMgFy, line 1: SyntaxError: expected expression, got ','
+JavaScript error: https://www.google.com/sorry/index?continue=https://www.youtube.com/embed/OVFXTllm7Jc%3Fmodestbranding%3D1%26start%3D0%26showinfo%3D0%26enablejsapi%3D1%26origin%3Dgenius.com&q=EgSQrElCGKWY8pQGIhAT1NWgnh7FnP_wswWo5u0YMgFy, line 1: SyntaxError: expected expression, got ','
+JavaScript error: https://www.google.com/sorry/index?continue=https://www.youtube.com/embed/OVFXTllm7Jc%3Fmodestbranding%3D1%26start%3D0%26showinfo%3D0%26enablejsapi%3D1%26origin%3Dgenius.com&q=EgSQrElCGKSa8pQGIhAhcBvcI7exrwHmLyP4tONkMgFy, line 1: SyntaxError: expected expression, got ','
+JavaScript error: https://www.google.com/sorry/index?continue=https://www.youtube.com/embed/OVFXTllm7Jc%3Fmodestbranding%3D1%26start%3D0%26showinfo%3D0%26enablejsapi%3D1%26origin%3Dgenius.com&q=EgSQrElCGNma8pQGIhAI25Yap9l8CELyYffItwryMgFy, line 1: SyntaxError: expected expression, got ','
+JavaScript error: https://www.google.com/sorry/index?continue=https://www.youtube.com/embed/OVFXTllm7Jc%3Fmodestbranding%3D1%26start%3D0%26showinfo%3D0%26enablejsapi%3D1%26origin%3Dgenius.com&q=EgSQrElCGPCa8pQGIhCVVkFX6LlQtE-uHiscdgx2MgFy, line 1: SyntaxError: expected expression, got ','
+JavaScript error: https://www.google.com/sorry/index?continue=https://www.youtube.com/embed/OVFXTllm7Jc%3Fmodestbranding%3D1%26start%3D0%26showinfo%3D0%26enablejsapi%3D1%26origin%3Dgenius.com&q=EgSQrElCGLOb8pQGIhAplvtUnPCciL04mKRzXu2cMgFy, line 1: SyntaxError: expected expression, got ','
+JavaScript error: https://www.google.com/sorry/index?continue=https://www.youtube.com/embed/OVFXTllm7Jc%3Fmodestbranding%3D1%26start%3D0%26showinfo%3D0%26enablejsapi%3D1%26origin%3Dgenius.com&q=EgSQrElCGMab8pQGIhCYcsEFzGLk_bnPHGN97RVoMgFy, line 1: SyntaxError: expected expression, got ','
+JavaScript error: https://www.google.com/sorry/index?continue=https://www.youtube.com/embed/OVFXTllm7Jc%3Fmodestbranding%3D1%26start%3D0%26showinfo%3D0%26enablejsapi%3D1%26origin%3Dgenius.com&q=EgSQrElCGM-b8pQGIhA9JWF8xlGogEu1Sd3edoNJMgFy, line 1: SyntaxError: expected expression, got ','
+JavaScript error: https://www.google.com/sorry/index?continue=https://www.youtube.com/embed/OVFXTllm7Jc%3Fmodestbranding%3D1%26start%3D0%26showinfo%3D0%26enablejsapi%3D1%26origin%3Dgenius.com&q=EgSQrElCGNec8pQGIhACXnMuyP17nnP_6y4jMGRRMgFy, line 1: SyntaxError: expected expression, got ','
+JavaScript error: https://www.google.com/sorry/index?continue=https://www.youtube.com/embed/OVFXTllm7Jc%3Fmodestbranding%3D1%26start%3D0%26showinfo%3D0%26enablejsapi%3D1%26origin%3Dgenius.com&q=EgSQrElCGOic8pQGIhCbYNTj4Mq6nv7blaMBBErJMgFy, line 1: SyntaxError: expected expression, got ','
+JavaScript error: https://www.google.com/sorry/index?continue=https://www.youtube.com/embed/OVFXTllm7Jc%3Fmodestbranding%3D1%26start%3D0%26showinfo%3D0%26enablejsapi%3D1%26origin%3Dgenius.com&q=EgSQrElCGJKd8pQGIhAhZgRiHXWLNoGfTGhwibkvMgFy, line 1: SyntaxError: expected expression, got ','
+JavaScript error: https://www.google.com/sorry/index?continue=https://www.youtube.com/embed/OVFXTllm7Jc%3Fmodestbranding%3D1%26start%3D0%26showinfo%3D0%26enablejsapi%3D1%26origin%3Dgenius.com&q=EgSQrElCGNOd8pQGIhDvZpe7OU5tKB_FPIiEMrkuMgFy, line 1: SyntaxError: expected expression, got ','
+1654428553009	Marionette	INFO	Stopped listening on port 57211654428556477	mozrunner::runner	INFO	Running command: "C:\\Users\\bench\\Desktop\\Tor Browser\\Browser\\firefox.exe" "--marionette" "--remote-debugging-port" "58428" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\bench\\AppData\\Local\\Temp\\rust_mozprofileAiWmgu"
+console.log: "TorSettings: loadFromPrefs()"
+console.log: "TorConnect: Init"
+console.log: "TorConnect: observed profile-after-change"
+console.log: "TorConnect: observing topic 'TorBootstrapStatus'"
+console.log: "TorConnect: observing topic 'TorBootstrapError'"
+console.log: "TorConnect: observing topic 'TorProcessExited'"
+console.log: "TorConnect: observing topic 'TorLogHasWarnOrErr'"
+console.log: "TorConnect: observing topic 'torsettings:ready'"
+console.log: "TorSettings: observed profile-after-change"
+1654428557324	Marionette	INFO	Marionette enabled
+console.log: "TorConnect: will load after bootstrap => [about:blank]"
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.error: "Could not load engine google@search.mozilla.org: Error: Extension is invalid"
+JavaScript error: resource://gre/modules/XPCOMUtils.jsm, line 161: TypeError: Cc[aContract] is undefined
+console.error: "Could not load engine blockchair-onion@search.mozilla.org: Error: Extension is invalid"
+DevTools listening on ws://localhost:58428/devtools/browser/f7140768-2f8d-4f52-aef6-d70067981387
+1654428558755	Marionette	INFO	Listening on port 58436
+1654428559146	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: , line 0: NetworkError: A network error occurred.
+JavaScript error: , line 0: NetworkError: A network error occurred.
+JavaScript error: resource://gre/modules/PromiseWorker.jsm, line 106: Error: Could not get children of file(C:\Users\bench\AppData\Local\Temp\rust_mozprofileAiWmgu\thumbnails) because it does not exist
+1654429139348	Marionette	INFO	Stopped listening on port 58436
+JavaScript error: resource:///modules/Interactions.jsm, line 209: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+JavaScript error: chrome://remote/content/marionette/cert.js, line 55: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+!!! error running onStopped callback: TypeError: callback is not a function
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1654429139421	RemoteAgent	ERROR	unable to stop listener: [Exception... "Component returned failure code: 0x8000ffff (NS_ERROR_UNEXPECTED) [nsIWindowMediator.getEnumerator]"  nsresult: "0x8000ffff (NS_ERROR_UNEXPECTED)"  location: "JS frame :: chrome://remote/content/cdp/observers/TargetObserver.jsm :: stop :: line 64"  data: no] Stack trace: stop()@TargetObserver.jsm:64
+unwatchForTabs()@TargetList.jsm:70
+unwatchForTargets()@TargetList.jsm:37
+destructor()@TargetList.jsm:109
+stop()@CDP.jsm:104
+close()@RemoteAgent.jsm:138
+1654429141357	geckodriver	INFO	Listening on 127.0.0.1:49246
+1654429146208	mozrunner::runner	INFO	Running command: "C:\\Users\\bench\\Desktop\\Tor Browser\\Browser\\firefox.exe" "--marionette" "--remote-debugging-port" "49247" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\bench\\AppData\\Local\\Temp\\rust_mozprofilepWLP1k"
+console.log: "TorSettings: loadFromPrefs()"
+console.log: "TorConnect: Init"
+console.log: "TorConnect: observed profile-after-change"
+console.log: "TorConnect: observing topic 'TorBootstrapStatus'"
+console.log: "TorConnect: observing topic 'TorBootstrapError'"
+console.log: "TorConnect: observing topic 'TorProcessExited'"
+console.log: "TorConnect: observing topic 'TorLogHasWarnOrErr'"
+console.log: "TorConnect: observing topic 'torsettings:ready'"
+console.log: "TorSettings: observed profile-after-change"
+1654429146918	Marionette	INFO	Marionette enabled
+console.log: "TorConnect: will load after bootstrap => [about:blank]"
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.error: "Could not load engine google@search.mozilla.org: Error: Extension is invalid"
+JavaScript error: resource://gre/modules/XPCOMUtils.jsm, line 161: TypeError: Cc[aContract] is undefined
+console.error: "Could not load engine blockchair-onion@search.mozilla.org: Error: Extension is invalid"
+DevTools listening on ws://localhost:49247/devtools/browser/b51f4a5c-a4c7-4978-be58-c284d9db7b48
+1654429148394	Marionette	INFO	Listening on port 49254
+1654429148867	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1654429283656	Marionette	INFO	Stopped listening on port 49254
+JavaScript error: resource:///modules/Interactions.jsm, line 209: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+JavaScript error: chrome://remote/content/marionette/cert.js, line 55: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+!!! error running onStopped callback: TypeError: callback is not a function
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1654429283731	RemoteAgent	ERROR	unable to stop listener: [Exception... "Component returned failure code: 0x8000ffff (NS_ERROR_UNEXPECTED) [nsIWindowMediator.getEnumerator]"  nsresult: "0x8000ffff (NS_ERROR_UNEXPECTED)"  location: "JS frame :: chrome://remote/content/cdp/observers/TargetObserver.jsm :: stop :: line 64"  data: no] Stack trace: stop()@TargetObserver.jsm:64
+unwatchForTabs()@TargetList.jsm:70
+unwatchForTargets()@TargetList.jsm:37
+destructor()@TargetList.jsm:109
+stop()@CDP.jsm:104
+close()@RemoteAgent.jsm:138
+1654429301118	geckodriver	INFO	Listening on 127.0.0.1:49703
+1654429306043	mozrunner::runner	INFO	Running command: "C:\\Users\\bench\\Desktop\\Tor Browser\\Browser\\firefox.exe" "--marionette" "--remote-debugging-port" "49704" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\bench\\AppData\\Local\\Temp\\rust_mozprofiley1ij7z"
+console.log: "TorSettings: loadFromPrefs()"
+console.log: "TorConnect: Init"
+console.log: "TorConnect: observed profile-after-change"
+console.log: "TorConnect: observing topic 'TorBootstrapStatus'"
+console.log: "TorConnect: observing topic 'TorBootstrapError'"
+console.log: "TorConnect: observing topic 'TorProcessExited'"
+console.log: "TorConnect: observing topic 'TorLogHasWarnOrErr'"
+console.log: "TorConnect: observing topic 'torsettings:ready'"
+console.log: "TorSettings: observed profile-after-change"
+1654429306765	Marionette	INFO	Marionette enabled
+console.log: "TorConnect: will load after bootstrap => [about:blank]"
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.error: "Could not load engine google@search.mozilla.org: Error: Extension is invalid"
+console.error: "Could not load engine blockchair-onion@search.mozilla.org: Error: Extension is invalid"
+JavaScript error: resource://gre/modules/XPCOMUtils.jsm, line 161: TypeError: Cc[aContract] is undefined
+DevTools listening on ws://localhost:49704/devtools/browser/3716de5b-ef7e-4354-85bc-b59ca9f57bc6
+1654429308143	Marionette	INFO	Listening on port 49711
+1654429308200	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1654429451582	Marionette	INFO	Stopped listening on port 49711
+JavaScript error: resource:///modules/Interactions.jsm, line 209: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+JavaScript error: chrome://remote/content/marionette/cert.js, line 55: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+!!! error running onStopped callback: TypeError: callback is not a function
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1654429451667	RemoteAgent	ERROR	unable to stop listener: [Exception... "Component returned failure code: 0x8000ffff (NS_ERROR_UNEXPECTED) [nsIWindowMediator.getEnumerator]"  nsresult: "0x8000ffff (NS_ERROR_UNEXPECTED)"  location: "JS frame :: chrome://remote/content/cdp/observers/TargetObserver.jsm :: stop :: line 64"  data: no] Stack trace: stop()@TargetObserver.jsm:64
+unwatchForTabs()@TargetList.jsm:70
+unwatchForTargets()@TargetList.jsm:37
+destructor()@TargetList.jsm:109
+stop()@CDP.jsm:104
+close()@RemoteAgent.jsm:138
+1654429455517	geckodriver	INFO	Listening on 127.0.0.1:49956
+1654429460405	mozrunner::runner	INFO	Running command: "C:\\Users\\bench\\Desktop\\Tor Browser\\Browser\\firefox.exe" "--marionette" "--remote-debugging-port" "49957" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\bench\\AppData\\Local\\Temp\\rust_mozprofilePkX5bs"
+console.log: "TorSettings: loadFromPrefs()"
+console.log: "TorConnect: Init"
+console.log: "TorConnect: observed profile-after-change"
+console.log: "TorConnect: observing topic 'TorBootstrapStatus'"
+console.log: "TorConnect: observing topic 'TorBootstrapError'"
+console.log: "TorConnect: observing topic 'TorProcessExited'"
+console.log: "TorConnect: observing topic 'TorLogHasWarnOrErr'"
+console.log: "TorConnect: observing topic 'torsettings:ready'"
+console.log: "TorSettings: observed profile-after-change"
+1654429461275	Marionette	INFO	Marionette enabled
+console.log: "TorConnect: will load after bootstrap => [about:blank]"
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.error: "Could not load engine google@search.mozilla.org: Error: Extension is invalid"
+JavaScript error: resource://gre/modules/XPCOMUtils.jsm, line 161: TypeError: Cc[aContract] is undefined
+console.error: "Could not load engine blockchair-onion@search.mozilla.org: Error: Extension is invalid"
+DevTools listening on ws://localhost:49957/devtools/browser/c4ea0275-b2ba-499d-901d-c28b4b5af1a2
+1654429462753	Marionette	INFO	Listening on port 49966
+1654429463069	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1654429919326	Marionette	INFO	Stopped listening on port 49966
+JavaScript error: resource:///modules/Interactions.jsm, line 209: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+!!! error running onStopped callback: TypeError: callback is not a function
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1654429919407	RemoteAgent	ERROR	unable to stop listener: [Exception... "Component returned failure code: 0x8000ffff (NS_ERROR_UNEXPECTED) [nsIWindowMediator.getEnumerator]"  nsresult: "0x8000ffff (NS_ERROR_UNEXPECTED)"  location: "JS frame :: chrome://remote/content/cdp/observers/TargetObserver.jsm :: stop :: line 64"  data: no] Stack trace: stop()@TargetObserver.jsm:64
+unwatchForTabs()@TargetList.jsm:70
+unwatchForTargets()@TargetList.jsm:37
+destructor()@TargetList.jsm:109
+stop()@CDP.jsm:104
+close()@RemoteAgent.jsm:138
+strap => [about:blank]"
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.error: "Could not load engine google@search.mozilla.org: Error: Extension is invalid"
+JavaScript error: resource://gre/modules/XPCOMUtils.jsm, line 161: TypeError: Cc[aContract] is undefined
+console.error: "Could not load engine blockchair-onion@search.mozilla.org: Error: Extension is invalid"
+DevTools listening on ws://localhost:63395/devtools/browser/36faad6f-72c2-452f-b1ef-75a23cf2658f
+1654429690419	Marionette	INFO	Listening on port 63402
+1654429690705	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1654429917455	Marionette	INFO	Stopped listening on port 63402
+JavaScript error: resource:///modules/Interactions.jsm, line 209: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+!!! error running onStopped callback: TypeError: callback is not a function
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1654429917535	RemoteAgent	ERROR	unable to stop listener: [Exception... "Component returned failure code: 0x8000ffff (NS_ERROR_UNEXPECTED) [nsIWindowMediator.getEnumerator]"  nsresult: "0x8000ffff (NS_ERROR_UNEXPECTED)"  location: "JS frame :: chrome://remote/content/cdp/observers/TargetObserver.jsm :: stop :: line 64"  data: no] Stack trace: stop()@TargetObserver.jsm:64
+unwatchForTabs()@TargetList.jsm:70
+unwatchForTargets()@TargetList.jsm:37
+destructor()@TargetList.jsm:109
+stop()@CDP.jsm:104
+close()@RemoteAgent.jsm:138
+strap => [about:blank]"
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.error: "Could not load engine google@search.mozilla.org: Error: Extension is invalid"
+JavaScript error: resource://gre/modules/XPCOMUtils.jsm, line 161: TypeError: Cc[aContract] is undefined
+console.error: "Could not load engine blockchair-onion@search.mozilla.org: Error: Extension is invalid"
+DevTools listening on ws://localhost:63569/devtools/browser/fbfe6b15-f46a-45c9-b522-7511e145a3b9
+1654429888806	Marionette	INFO	Listening on port 63576
+1654429888963	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1654429923583	Marionette	INFO	Stopped listening on port 63576
+JavaScript error: resource:///modules/Interactions.jsm, line 209: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+JavaScript error: chrome://remote/content/marionette/cert.js, line 55: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+!!! error running onStopped callback: TypeError: callback is not a function
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1654429923793	RemoteAgent	ERROR	unable to stop listener: [Exception... "Component returned failure code: 0x8000ffff (NS_ERROR_UNEXPECTED) [nsIWindowMediator.getEnumerator]"  nsresult: "0x8000ffff (NS_ERROR_UNEXPECTED)"  location: "JS frame :: chrome://remote/content/cdp/observers/TargetObserver.jsm :: stop :: line 64"  data: no] Stack trace: stop()@TargetObserver.jsm:64
+unwatchForTabs()@TargetList.jsm:70
+unwatchForTargets()@TargetList.jsm:37
+destructor()@TargetList.jsm:109
+stop()@CDP.jsm:104
+close()@RemoteAgent.jsm:138
+://gre/modules/XPCOMUtils.jsm, line 161: TypeError: Cc[aContract] is undefined
+console.error: "Could not load engine blockchair-onion@search.mozilla.org: Error: Extension is invalid"
+DevTools listening on ws://localhost:63647/devtools/browser/87930636-0031-4a27-a62a-ef950ee1ab4b
+1654429922692	Marionette	INFO	Listening on port 63656
+1654429923105	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1654430370640	Marionette	INFO	Stopped listening on port 63656
+JavaScript error: resource:///modules/Interactions.jsm, line 209: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+JavaScript error: chrome://remote/content/marionette/cert.js, line 55: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+!!! error running onStopped callback: TypeError: callback is not a function
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x390154,name=PContent::Msg_InsertNewFocusActionId) Closed channel: cannot send/recv
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x390154,name=PContent::Msg_InsertNewFocusActionId) Closed channel: cannot send/recv
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x390154,name=PContent::Msg_InsertNewFocusActionId) Closed channel: cannot send/recv
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x390147,name=PContent::Msg_DiscardBrowsingContext) Closed channel: cannot send/recv
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x390147,name=PContent::Msg_DiscardBrowsingContext) Closed channel: cannot send/recv
+
+1654451548644	geckodriver	INFO	Listening on 127.0.0.1:49338
+1654451555039	mozrunner::runner	INFO	Running command: "C:\\Users\\bench\\Desktop\\Tor Browser\\Browser\\firefox.exe" "--marionette" "--remote-debugging-port" "49339" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\bench\\AppData\\Local\\Temp\\rust_mozprofilehMCAoc"
+console.log: "TorSettings: loadFromPrefs()"
+console.log: "TorConnect: Init"
+console.log: "TorConnect: observed profile-after-change"
+console.log: "TorConnect: observing topic 'TorBootstrapStatus'"
+console.log: "TorConnect: observing topic 'TorBootstrapError'"
+console.log: "TorConnect: observing topic 'TorProcessExited'"
+console.log: "TorConnect: observing topic 'TorLogHasWarnOrErr'"
+console.log: "TorConnect: observing topic 'torsettings:ready'"
+console.log: "TorSettings: observed profile-after-change"
+1654451555717	Marionette	INFO	Marionette enabled
+console.log: "TorConnect: will load after bootstrap => [about:blank]"
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.error: "Could not load engine google@search.mozilla.org: Error: Extension is invalid"
+console.error: "Could not load engine blockchair-onion@search.mozilla.org: Error: Extension is invalid"
+JavaScript error: resource://gre/modules/XPCOMUtils.jsm, line 161: TypeError: Cc[aContract] is undefined
+DevTools listening on ws://localhost:49339/devtools/browser/e94b2901-90e8-4511-a1bb-4fa57c7e97ee
+1654451557621	Marionette	INFO	Listening on port 49344
+1654451557709	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+Extension error: [Exception... "Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIDOMWindowUtils.addSheet]"  nsresult: "0x80004005 (NS_ERROR_FAILURE)"  location: "JS frame :: resource://gre/modules/ExtensionCommon.jsm :: runSafeSyncWithoutClone :: line 74"  data: no] undefined 74
+[[Exception stack
+runSafeSyncWithoutClone@resource://gre/modules/ExtensionCommon.jsm:74:12
+inject/cssPromise<@resource://gre/modules/ExtensionContent.jsm:533:36
+Current stack
+runSafeSyncWithoutClone@resource://gre/modules/ExtensionCommon.jsm:80:9
+inject/cssPromise<@resource://gre/modules/ExtensionContent.jsm:533:36
+]]
+Port.onMessage event fired while context is inactive.
+JavaScript error: moz-extension://97c2f315-3166-43b4-add5-2516d1efabde/nscl/common/log.js, line 36: TypeError: can't access dead object
+1654453120220	Marionette	INFO	Stopped listening on port 49344
+JavaScript error: resource:///modules/Interactions.jsm, line 209: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+JavaScript error: chrome://remote/content/marionette/cert.js, line 55: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+!!! error running onStopped callback: TypeError: callback is not a function
+1654453120377	RemoteAgent	ERROR	unable to stop listener: [Exception... "Component returned failure code: 0x8000ffff (NS_ERROR_UNEXPECTED) [nsIWindowMediator.getEnumerator]"  nsresult: "0x8000ffff (NS_ERROR_UNEXPECTED)"  location: "JS frame :: chrome://remote/content/cdp/observers/TargetObserver.jsm :: stop :: line 64"  data: no] Stack trace: stop()@TargetObserver.jsm:64
+unwatchForTabs()@TargetList.jsm:70
+unwatchForTargets()@TargetList.jsm:37
+destructor()@TargetList.jsm:109
+stop()@CDP.jsm:104
+close()@RemoteAgent.jsm:138
