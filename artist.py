@@ -9,6 +9,9 @@ from time import sleep
 from tqdm.notebook import tqdm
 import pickle
 
+DRIVER = create_chrome_driver()
+# DRIVER.get("http://check.torproject.org")
+
 # from classes import Artist, Song, Album
 
 
@@ -24,8 +27,7 @@ class Artist():
     def __eq__(self, other: "Artist"):
         return (
             self.__class__ == other.__class__ and
-            self.link == other.link and 
-            self.name == other.name
+            self.link == other.link
         )
     def __hash__(self):
         return hash(self.link)
@@ -100,7 +102,63 @@ def link_to_artists(lien: str) -> Set[Artist]:
     return artists
 
 
+def div_to_type(div: str) -> str:
+    return div.find("div").text
 
 
-# DRIVER = create_chrome_driver()
-# DRIVER.get("http://check.torproject.org")
+def a_to_artist(a: bs4.element.Tag) -> Artist:
+    artist_name = a.text
+    artist_link = a["href"]
+    return Artist(artist_link, artist_name)
+
+
+def link_to_artists(lien: str) -> Set[Artist]:
+    content = re.get(lien).text
+    artists = set()
+    filtered_content = BeautifulSoup(content).findAll(
+        "div", class_="SongInfo__Credit-nekw6x-3")
+    ecrit_par = [c for c in filtered_content if div_to_type(c) == "Written By"]
+    if len(ecrit_par) <=0:
+        return []
+
+    for element in ecrit_par[0].findAll('a'):
+        artists.add(a_to_artist(element))
+    return artists
+
+
+def artist_to_albums(artist: Artist) -> List[Album]:
+    DRIVER.get(artist.link)
+    elements = DRIVER.find_elements(By.CLASS_NAME, "full_width_button")
+    button_list = [e for e in elements if "Show all albums" in e.text]
+    if len(button_list) <= 0:
+        print("no albums for artist", artist)
+        return []
+    button = button_list[0]
+    button.click()
+    albums = []
+    i = 0 
+    while len(albums) == 0:
+        sleep(1)
+        i += 1
+        if i >15:
+            raise TimeoutError("Too long")
+        soup = BeautifulSoup(DRIVER.page_source, "lxml")
+        albums = [(x.find('a')["title"], x.find('a')["href"], x.find("div", class_="mini_card-subtitle").text) for x in soup.findAll('mini-album-card')]
+    if len(albums):
+        sleep(1)
+
+    return [Album(artist, name, link, year) for name, link, year in albums]
+
+
+def album_to_song_links(album: Album) -> List[str]:
+    content = re.get(album.link).text
+    soup = BeautifulSoup(content)
+    song_names = []
+    song_links = []
+    for div in soup.findAll("div", class_="chart_row-content"):
+        song = div.find("a")
+        name, link = (song.text.strip().split("\n")[0].replace(u'\xa0', u' '), song["href"])
+        song_names.append(name)
+        song_links.append(link)
+    return song_links,song_names
+

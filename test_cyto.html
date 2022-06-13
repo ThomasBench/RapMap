@@ -1,0 +1,258 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vis-network@latest/styles/vis-network.css"
+        type="text/css" />
+    <script type="text/javascript" <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <center>
+        <h1></h1>
+    </center>
+
+    <!-- <link rel="stylesheet" href="../node_modules/vis/dist/vis.min.css" type="text/css" />
+<script type="text/javascript" src="../node_modules/vis/dist/vis.js"> </script>-->
+
+    <style type="text/css">
+        #mynetwork {
+            width: 1250;
+            height: 800;
+            background-color: #ffffff;
+            border: 1px solid lightgray;
+            position: relative;
+            float: left;
+        }
+
+
+        #loadingBar {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            width: 800;
+            height: 700;
+            background-color: rgba(200, 200, 200, 0.8);
+            -webkit-transition: all 0.5s ease;
+            -moz-transition: all 0.5s ease;
+            -ms-transition: all 0.5s ease;
+            -o-transition: all 0.5s ease;
+            transition: all 0.5s ease;
+            opacity: 1;
+        }
+
+        #bar {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            width: 20px;
+            height: 20px;
+            margin: auto auto auto auto;
+            border-radius: 11px;
+            border: 2px solid rgba(30, 30, 30, 0.05);
+            background: rgb(0, 173, 246);
+            /* Old browsers */
+            box-shadow: 2px 0px 4px rgba(0, 0, 0, 0.4);
+        }
+
+        #border {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            width: 500px;
+            height: 23px;
+            margin: auto auto auto auto;
+            box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+        }
+
+        #text {
+            position: absolute;
+            top: 8px;
+            left: 530px;
+            width: 30px;
+            height: 50px;
+            margin: auto auto auto auto;
+            font-size: 22px;
+            color: #000000;
+        }
+
+        div.outerBorder {
+            position: relative;
+            top: 400px;
+            width: 600px;
+            height: 44px;
+            margin: auto auto auto auto;
+            border: 8px solid rgba(0, 0, 0, 0.1);
+            background: rgb(252, 252, 252);
+            /* Old browsers */
+            background: -moz-linear-gradient(top, rgba(252, 252, 252, 1) 0%, rgba(237, 237, 237, 1) 100%);
+            /* FF3.6+ */
+            background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(252, 252, 252, 1)), color-stop(100%, rgba(237, 237, 237, 1)));
+            /* Chrome,Safari4+ */
+            background: -webkit-linear-gradient(top, rgba(252, 252, 252, 1) 0%, rgba(237, 237, 237, 1) 100%);
+            /* Chrome10+,Safari5.1+ */
+            background: -o-linear-gradient(top, rgba(252, 252, 252, 1) 0%, rgba(237, 237, 237, 1) 100%);
+            /* Opera 11.10+ */
+            background: -ms-linear-gradient(top, rgba(252, 252, 252, 1) 0%, rgba(237, 237, 237, 1) 100%);
+            /* IE10+ */
+            background: linear-gradient(to bottom, rgba(252, 252, 252, 1) 0%, rgba(237, 237, 237, 1) 100%);
+            /* W3C */
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fcfcfc', endColorstr='#ededed', GradientType=0);
+            /* IE6-9 */
+            border-radius: 72px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div id="mynetwork"></div>
+
+
+
+    <script type="text/javascript">
+
+        function creatGraph(nodes, edges) {
+            const simulationDuration = 60 * 1000
+            const endTime = Date.now() + simulationDuration
+            function onSimulationTick() {
+                if (Date.now() < endTime) {
+                    /*update the simulation*/
+                    ticked()
+                } else {
+                    simulation.stop();
+                }
+            }
+            const width = 1250
+            const height = 800
+
+            const linkStroke = 1
+            const linkStrokeOpacity = 1
+            const linkStrokeLinecap = 1
+            const linkStrokeWidth = 2
+            const nodeFill = "blue"
+            const nodeStroke = 'red'
+            const nodeStrokeOpacity = 1
+            const nodeStrokeWidth = 3
+            const nodeRadius = 2
+
+            const nodeStrength = 1
+            const linkStrength = 0.2
+
+
+
+            const links = edges.map((edgeData) => ({ "source": edgeData["data"]["source"], 'target': edgeData["data"]["target"], "weight": edgeData["data"]["weight"] }))
+
+            // Construct the forces.
+            console.log(links)
+            const forceNode = d3.forceManyBody();
+            const forceLink = d3.forceLink(links).id((node) => (node.id)).distance(() => 350);
+            if (nodeStrength !== undefined) forceNode.strength(nodeStrength);
+            if (linkStrength !== undefined) forceLink.strength(linkStrength);
+
+            const node_d3 = nodes.map((n) => (n["data"]))
+
+            const simulation = d3.forceSimulation(node_d3)
+                .force("link", forceLink)
+                .force("charge", forceNode)
+                .force("center", d3.forceCenter().strength(0.1))
+                .force(
+                    "collision",
+                    d3.forceCollide().radius(function (d) {
+                        return d.radius;
+                    })
+                )
+                .velocityDecay(0.4)
+                // .on("tick", ticked)
+                .on("tick", onSimulationTick);
+
+            const svg = d3.select("#mynetwork").append("svg")
+                .attr("width", width)
+                .attr("height", height)
+                .attr("viewBox", [-width / 2, -height / 2, width, height])
+                .attr("style", "max-width: 100%; height: auto; height: intrinsic;");
+
+            // const node = svg.append("g")
+            //     .attr("fill", nodeFill)
+            //     .attr("stroke", nodeStroke)
+            //     .attr("stroke-opacity", nodeStrokeOpacity)
+            //     .attr("stroke-width", nodeStrokeWidth)
+            //     .selectAll("circle")
+            //     .data(nodes)
+            //     .join("circle")
+            //     .attr("r", nodeRadius)
+            //     .call(drag(simulation));
+            const link = svg
+                // .attr("stroke", typeof linkStroke !== "function" ? linkStroke : null)
+                // .attr("stroke-opacity", linkStrokeOpacity)
+                // .attr("stroke-width", typeof linkStrokeWidth !== "function" ? linkStrokeWidth : null)
+                // .attr("stroke-linecap", linkStrokeLinecap)
+                .selectAll("line")
+                .data(links)
+                .join("line")
+                .attr("stroke", "darkgrey")
+                .attr("strokeWidth", (d) => (d.weight))
+                .attr("opacity", 0.2)
+                ;
+
+
+            const node = svg
+                .selectAll("circle")
+                .data(node_d3)
+                .join("circle")
+                .attr("r", (d) => (d.size * 0.1))
+                .attr("fill", "black")
+                .call(drag(simulation));
+
+            function intern(value) {
+                return value !== null && typeof value === "object" ? value.valueOf() : value;
+            }
+
+            function ticked() {
+                link
+                    .attr("x1", d => d.source.x)
+                    .attr("y1", d => d.source.y)
+                    .attr("x2", d => d.target.x)
+                    .attr("y2", d => d.target.y);
+
+                node
+                    .attr("cx", d => d.x)
+                    .attr("cy", d => d.y);
+            }
+
+            function drag(simulation) {
+                function dragstarted(event) {
+                    console.log('coucou')
+                    if (!event.active) simulation.alphaTarget(0.3).restart();
+                    event.subject.fx = event.subject.x;
+                    event.subject.fy = event.subject.y;
+                }
+
+                function dragged(event) {
+                    event.subject.fx = event.x;
+                    event.subject.fy = event.y;
+                }
+
+                function dragended(event) {
+                    if (!event.active) simulation.alphaTarget(0);
+                    event.subject.fx = null;
+                    event.subject.fy = null;
+                }
+
+                return d3.drag()
+                    .on("start", dragstarted)
+                    .on("drag", dragged)
+                    .on("end", dragended);
+            }
+
+            return;
+        }
+
+        $.getJSON("./network.JSON", (data) => {
+            creatGraph(data["elements"]["nodes"], data["elements"]["edges"])
+        })
+
+    </script>
+</body>
+
+</html>
